@@ -1,0 +1,13 @@
+npm install
+cp .env.example .env     # fill MONGO_URI (Atlas), JWT_SECRET, Cloudinary keys
+npm run seed:admin       # creates admin@bsis.in login
+npm run dev              # http://localhost:5000/api/health
+
+
+
+
+
+https://bsis.in/ , for this website i want an comlete CMS so everything manage of this webstire frontend from CMS panel like all pages, images all things so i have to make an complete backend frotnend for CMS, and integrate this with this website so it works perfectly , how to do it MERN stack dev
+
+
+now make it complete frontend also and integrate this with the backend apis UI looks better beautifull Like CMS, give complete file, so i can run and test complete flow
