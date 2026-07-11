@@ -20,13 +20,13 @@ import teamRoutes from "./routes/teamRoutes.js";
 import partnerRoutes from "./routes/partnerRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import memberRoutes from "./routes/memberRoutes.js";
-import dns from 'node:dns'
-dns.setServers(['8.8.8.8', '8.8.4.4'])
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const app = express();
 connectDB();
 
-// ---- Global middleware ----
+// ---- Global middleware ---
 app.set("trust proxy", 1); // needed on Render/Railway/behind Nginx for rate limiting
 
 app.use(helmet());
