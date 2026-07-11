@@ -36,7 +36,14 @@ app.use(helmet());
 //   .map((s) => s.trim())
 //   .filter(Boolean);
 
-const allowedOrigins = ["https://bsis-cms.vercel.app", "http://localhost:5173"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:5174",
+  "http://localhost:3000",
+  "https://bsis.in",
+  "https://admin.bsis.in",
+  "https://bsis-cms.vercel.app",
+];
 app.use(
   cors({
     origin: (origin, cb) => {
