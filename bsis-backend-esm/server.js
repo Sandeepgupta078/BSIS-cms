@@ -31,10 +31,12 @@ app.set("trust proxy", 1); // needed on Render/Railway/behind Nginx for rate lim
 
 app.use(helmet());
 
-const allowedOrigins = (process.env.CLIENT_URLS || "")
-  .split(",")
-  .map((s) => s.trim())
-  .filter(Boolean);
+// const allowedOrigins = (process.env.CLIENT_URLS || "")
+//   .split(",")
+//   .map((s) => s.trim())
+//   .filter(Boolean);
+
+const allowedOrigins = ["https://bsis-cms.vercel.app", "http://localhost:5173"];
 app.use(
   cors({
     origin: (origin, cb) => {
